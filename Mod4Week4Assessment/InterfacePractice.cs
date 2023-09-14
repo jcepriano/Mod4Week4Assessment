@@ -2,10 +2,17 @@
 using System.Collections.Generic;
 
 // Define the interface
-public interface InterfaceNameHere { }
+public interface ITransportation 
+{ 
+    string Manufacturer { get; }
+    void Start();
+    void Accelerate();
+    void Brake();
+    void Stop();
+}
 
 // Implement the interface in different vehicle classes
-public class Car : InterfaceNameHere
+public class Car : ITransportation
 {
     public string Manufacturer { get; private set; }
     public int Year { get; private set; }
@@ -37,7 +44,7 @@ public class Car : InterfaceNameHere
     }
 }
 
-public class Bicycle : InterfaceNameHere
+public class Bicycle : ITransportation
 {
     public string Manufacturer { get; private set; }
     public bool HasBasket { get; private set; }

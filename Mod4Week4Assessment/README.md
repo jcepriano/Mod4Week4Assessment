@@ -33,27 +33,33 @@ Open up `InterfacePractice.cs`. You should not need to run this file, you will j
 Edit this file with your answers.
 
 1. What are some of the benefits of using inheritance? (1 point)
-    * < Your answer >  
+    * Inheritance is useful for many reasons. One of the biggest reasons being the ability to reuse code such as properties and
+	methods in different classes. It also serves as a tool to extend functionality of existing classes to new ones.
 2. What might be some of the disadvantages of using inheritance? (1 point)
-    * < Your answer >  
+    * If changes were to be made to the base class, it would affect all of the derived classes. It can also become very complex 
+	if mulitple levels of child classes are being created.
 
 3. How would you describe the difference between the base class and the derived class when working with inheritance? (1 point)
-	* < Your answer >  
+	* A base class holds attributes and methods that will be inherited by other classes. A derived class inherits attributes 
+	and methods from a base class.
 
 4.  What happens if you define the same method in the parent class and the child class? (1 point)
-	* < Your answer > 
+	*  Defining the same method in a child class that's in the parent class is method overriding. If a method already exists in
+	a parent class and is defined in a derived class, the method will be overwritten and have a new use in that class.
 
 5. In your own words, how would you define an Interface? (1 point)
-    * < Your answer > 
+    * An interface is a contract that holds attributes without a value and methods without a behavior. 
+	The attributes and methods are given values and behaviors when a class implements the interface.
 
 6. Does a class implementing an interface need to implement all of the methods in that interface? Why or why not? (1 point)
-    * < Your answer > 
+    * A class is required to implement all of the methods defined in an interface. This is because an interface does not provide values
+	or behaviors for its members.
 
 7. Both Inheritance and Interfaces use the `:` symbol after a class name. If you're looking at a class, what's one thing that can help you determine if the class is implementing an interface of extending a base class? (1 point)
-	* < Your answer >  
+	*  It is convention to name an interface with an I at the beginning to identify whether it is an interface or not.
 
 8. If asked in an interview, how would you describe the purpose of the IOC container in a .NET application? (1 point)
-	* < Your answer >  
+	* The IoC container automatically injects dependencies. 
 
 
 ## Rubric
